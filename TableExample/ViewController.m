@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-
+//first string code
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
