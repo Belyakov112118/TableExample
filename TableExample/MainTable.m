@@ -7,7 +7,7 @@
 //
 
 #import "MainTable.h"
-
+#import "CustomCell.h"
 
 @interface MainTable ()
 
@@ -37,15 +37,50 @@
     return [_data[section] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    [cell.textLabel setText:_data[indexPath.section][indexPath.row]];
-    
-    return cell;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.section == 1){
+    return  120;
+    }
+    else{
+        return 50;
+    }
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *identifier = @"";
+    switch (indexPath.section) {
+        case 0:
+            identifier =@"cell1";
+            break;
+            case 1:
+                identifier =@"cell2";
+                break;
+            case 2:
+                identifier =@"cell3";
+                break;
+            
+        default:
+            break;
+    }
+    if([identifier isEqualToString:@"cell2"]){
+        CustomCell *cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        NSString *text =_data[indexPath.section][indexPath.row];
+        [cell setName:text description:@"description for cell" select:NO];
+        return cell;
+    }
+    else{
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    [cell.textLabel setText:_data[indexPath.section][indexPath.row]];
+    return cell;
+    }
 
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSString *title = [NSString stringWithFormat:@"Title %ld",(section+1)];
+    return title;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
