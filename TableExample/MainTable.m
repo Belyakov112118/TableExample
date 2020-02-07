@@ -8,6 +8,7 @@
 
 #import "MainTable.h"
 #import "CustomCell.h"
+#import "SecondVC.h"
 
 @interface MainTable ()
 
@@ -115,14 +116,14 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"segue"]){
+        SecondVC *vc = segue.destinationViewController;
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        vc.name = [[cell textLabel] text];
+    }
 }
-*/
 
 @end

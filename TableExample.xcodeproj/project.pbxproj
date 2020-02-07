@@ -15,6 +15,7 @@
 		3F08971B2396459F009D0F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08971A2396459F009D0F63 /* main.m */; };
 		3F08972323964B6E009D0F63 /* MainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F08972223964B6E009D0F63 /* MainTable.m */; };
 		3F0B7FB223A8C74C0028BDA8 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B7FB123A8C74C0028BDA8 /* CustomCell.m */; };
+		3F9118B423ED4C1200FE7409 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9118B323ED4C1200FE7409 /* SecondVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		3F08972223964B6E009D0F63 /* MainTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTable.m; sourceTree = "<group>"; };
 		3F0B7FB023A8C74C0028BDA8 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		3F0B7FB123A8C74C0028BDA8 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		3F9118B223ED4C1200FE7409 /* SecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		3F9118B323ED4C1200FE7409 /* SecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				3F08972223964B6E009D0F63 /* MainTable.m */,
 				3F0B7FB023A8C74C0028BDA8 /* CustomCell.h */,
 				3F0B7FB123A8C74C0028BDA8 /* CustomCell.m */,
+				3F9118B223ED4C1200FE7409 /* SecondVC.h */,
+				3F9118B323ED4C1200FE7409 /* SecondVC.m */,
 				3F0897082396459D009D0F63 /* AppDelegate.h */,
 				3F0897092396459D009D0F63 /* AppDelegate.m */,
 				3F08970B2396459D009D0F63 /* SceneDelegate.h */,
@@ -155,6 +160,7 @@
 				3F08971B2396459F009D0F63 /* main.m in Sources */,
 				3F08970D2396459D009D0F63 /* SceneDelegate.m in Sources */,
 				3F08972323964B6E009D0F63 /* MainTable.m in Sources */,
+				3F9118B423ED4C1200FE7409 /* SecondVC.m in Sources */,
 				3F0B7FB223A8C74C0028BDA8 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

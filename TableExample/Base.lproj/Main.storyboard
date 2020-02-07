@@ -25,7 +25,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="D11-PP-5Bc" kind="show" id="x5E-i9-RVu"/>
+                                    <segue destination="D11-PP-5Bc" kind="show" identifier="segue" id="x5E-i9-RVu"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="281" id="bUZ-G1-TRp" customClass="CustomCell">
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="1636" y="151.57421289355324"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="3x7-yJ-Ebm">
             <objects>
-                <viewController id="D11-PP-5Bc" sceneMemberID="viewController">
+                <viewController id="D11-PP-5Bc" customClass="SecondVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ng2-fi-jEQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ez9-G2-2xS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="152"/>
+            <point key="canvasLocation" x="2391" y="152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JWX-D1-iDD">
